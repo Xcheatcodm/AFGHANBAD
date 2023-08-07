@@ -6,7 +6,7 @@ MenUU = gg.choice({
  "Menu Bypass",
  "Menu Cheat",
  "Exit", 
-}, nil, (os["date"]("Owner @afghanbad")))
+}, nil, (os["date"]("Vip Script Buy @afghanbad")))
 if MenUU == nil then
 end
      
