@@ -30,7 +30,7 @@ gg.toast("@afghanbad")
  "Bypass Logo",
  "Bypass Lobby", 
  "Back", 
-}, nil, (os["date"]("Owner @afghanbad")))
+}, nil, (os["date"]("Vip Script Buy @afghanbad")))
         if menu1 == nil then
         end
      
