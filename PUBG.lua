@@ -131,45 +131,18 @@ end
 -------Lobby
 function Lobby()
 gg.toast("Owner @afghanbad")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC )
-gg.searchNumber("620137442967552;303473799200768", gg.TYPE_QWORD)
-gg.refineNumber("620137442967552", gg.TYPE_QWORD)
-gg.getResults(50000)
-gg.editAll("288,233,678,981,562,368", gg.TYPE_QWORD)
-gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("134,658;134,658", gg.TYPE_DWORD)
-gg.refineNumber("134,658", gg.TYPE_DWORD)
-gg.getResults(100000)
-gg.editAll("84,149,249", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("134,914;262,403", gg.TYPE_DWORD)
-gg.refineNumber("134,914", gg.TYPE_DWORD)
-gg.getResults(100000)
-gg.editAll("84,149,249", gg.TYPE_DWORD)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC )
-gg.searchNumber("66,048;33,554,432", gg.TYPE_DWORD)
-gg.refineNumber("66,048", gg.TYPE_DWORD)
-gg.getResults(50000)
-gg.editAll("84,149,249", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC )
-gg.searchNumber("33,554,432;524,547", gg.TYPE_DWORD)
-gg.refineNumber("524,547", gg.TYPE_DWORD)
-gg.getResults(50000)
-gg.editAll("84,149,249", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("144,387;133,634", gg.TYPE_DWORD)
-gg.refineNumber("144,387", gg.TYPE_DWORD)
-gg.getResults(100000)
-gg.editAll("84,149,249", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("Bypass Lobby Active") 
+  gg.searchNumber("67109633", gg.TYPE_DWORD)
+  gg.refineNumber("67109633", gg.TYPE_DWORD)
+  t = gg.getResultsCount()
+  if t <= 50 then
+ gg.alert("\n        bypass on \n ANTICHEAT off✅")
+ gg.clearResults()
+  elseif t >= 50 then
+ gg.alert("\n          bypass not active \n ANTICHEAT on ❌")
+ gg.clearResults()
+  gg.processKill ()
+end
 end
 
 function GAME()
@@ -181,9 +154,6 @@ AFGHANBAD= gg.multiChoice({
 "Xhit Effect",
 "Cross Hair",
 "No Recoil",
-"Ipad View",
-"Black Body", 
-"Black Sky",
 "Back",
 }, nil, (os["date"]("Owner @afghanbad")))
 if AFGHANBAD == nil then else 
@@ -194,10 +164,7 @@ if AFGHANBAD [4] == true then Mag()end
 if AFGHANBAD [5] == true then xhit()end
 if AFGHANBAD [6] == true then Cross()end
 if AFGHANBAD [7] == true then Nor()end
-if AFGHANBAD [8] == true then Ipad()end
-if AFGHANBAD [9] == true then Black()end
-if AFGHANBAD [10] == true then Sky()end
-if AFGHANBAD [11] == true then HOME()end
+if AFGHANBAD [8] == true then HOME()end
 end
 AFGHANBAD= 1
 end
@@ -283,42 +250,6 @@ setvalue(so+py,16,0)
 gg.toast("No Recoil Active")
 end
 
-function Ipad()
-gg.toast("Owner @afghanbad")
-local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
-pta(ue4 + 0x37CAB14, "00007A43r")
-li()
-cl()
-rs(sex())
-clr() 
-gg.setVisible(true) 
-ex()
-gg.toast("Ipad View Active")
-end
-
-function Black()
-gg.toast("Owner @afghanbad")
-local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
-pta(ue4 + 0x29EF4C8, "00002041r")
-li()
-cl()
-rs(sex())
-clr()  
-ex()
-gg.toast("Black Body Active")
-end
-
-function Sky()
-gg.toast("Owner @afghanbad")
-local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
-pta(ue4 + 0x3ACBF10, "B0C627B7r")
-li()
-cl()
-rs(sex())
-clr()
-ex()
-gg.toast("Black Sky")
-end
 
 function EXIT1()
 mosh = gg.alert("ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴏᴜᴛ?", "ɴᴏ↪️ ", "🚪ʏᴇꜱ")
