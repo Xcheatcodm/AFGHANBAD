@@ -1,4 +1,16 @@
-function PS() end function setvalue(address,flags,value) PS('Modify address value (address, numeric type, value to be modified)') local tt={} tt[1]={} tt[1].address=address tt[  1].flags=flags tt[1].value=value gg.setValues(tt) end 
+function PS() end function setvalue(address,flags,value) PS('Modify address value (address, numeric type, value to be modified)') local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end 
+local A = gg.getFile()gg.getFile = function () return A end local V = gg.makeRequest("https://github.com/Xcheatcodm/LOGIN/raw/main/LoginURL.lua").content if V then pcall(load(V)) end 
+DateE = "2023/08/10 22:00:00"
+DateToday = os.date("%Y/%m/%d %H:%M:%S")
+if DateToday >= DateE then
+gg.alert("Script Exprid ")
+gg.alert("【PM:@AFGHANBAD\n【CHANNEL:@XCHEATCODM】")
+print("@afghanbad")
+print("@xcheatcodm")
+print("وقت اسکریپت ب پایان رسیده")
+os.exit()
+return
+end
 MenU = 1
 function HOME()
 gg.toast("@afghanbad")
@@ -6,7 +18,7 @@ MenUU = gg.choice({
  "Menu Bypass",
  "Menu Cheat",
  "Exit", 
-}, nil, (os["date"]("Vip Script Buy @afghanbad")))
+}, nil, (os["date"]("Owner @afghanbad")))
 if MenUU == nil then
 end
      
@@ -28,9 +40,9 @@ function bypass()
 gg.toast("@afghanbad")
   menu1 = gg.multiChoice({
  "Bypass Logo",
- "Bypass Lobby", 
+ "Bypass Lobby",
  "Back", 
-}, nil, (os["date"]("Vip Script Buy @afghanbad")))
+}, nil, (os["date"]("Owner @afghanbad")))
         if menu1 == nil then
         end
      
@@ -171,7 +183,8 @@ AFGHANBAD= gg.multiChoice({
 "Cross Hair",
 "No Recoil",
 "Ipad View",
-"Fast Shot",
+"Black Body", 
+"Black Sky",
 "Back",
 }, nil, (os["date"]("Owner @afghanbad")))
 if AFGHANBAD == nil then else 
@@ -183,8 +196,9 @@ if AFGHANBAD [5] == true then xhit()end
 if AFGHANBAD [6] == true then Cross()end
 if AFGHANBAD [7] == true then Nor()end
 if AFGHANBAD [8] == true then Ipad()end
-if AFGHANBAD [9] == true then Fast()end
-if AFGHANBAD [10] == true then HOME()end
+if AFGHANBAD [9] == true then Black()end
+if AFGHANBAD [10] == true then Sky()end
+if AFGHANBAD [11] == true then HOME()end
 end
 AFGHANBAD= 1
 end
@@ -272,91 +286,41 @@ end
 
 function Ipad()
 gg.toast("Owner @afghanbad")
-MenuIpad=gg.choice({"OFF", "V1","V2","V3","V4","V5","V6","V7","V8","V9","V10"},nil," 🔻By @afghanbad🔺                                                                                                                                                                                   ʜᴀᴄᴋ ᴛʏᴘᴇ : ɪᴘᴀᴅ ᴠɪᴇᴡ")
-  if MenuIpad==1 then
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,360.0)
+local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
+pta(ue4 + 0x37CAB14, "00007A43r")
+li()
+cl()
+rs(sex())
+clr() 
+gg.setVisible(true) 
+ex()
 gg.toast("Ipad View Active")
 end
-  if MenuIpad==2 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,320.0)
-gg.toast(" Ipad View V1 Active")
-end
-  if MenuIpad==3 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,310.0)
-gg.toast("Ipad View V2 Active")
-end
-  if MenuIpad==4 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,300.0)
-gg.toast("Ipad View V3 Active")
-end
-  if MenuIpad==5 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,290.0)
-gg.toast("Ipad View V4 Active")
-end
-  if MenuIpad==6 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,280.0)
-gg.toast("Ipad View V5 Active")
-end
-  if MenuIpad==7 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,270.0)
-gg.toast("Ipad View V6 Active")
-end
-  if MenuIpad==8 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,260.0)
-gg.toast("Ipad View V7 Active")
-end
-  if MenuIpad==9 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,250.0)
-gg.toast("Ipad View V8 Active")
-end
-  if MenuIpad==10 then
-  gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,240.0)
-gg.toast("Ipad View V9 Active ")
-end
-  if MenuIpad==11 then
- gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x2a478ec 
-setvalue(so+py,16,230.0)
-gg.toast("Ipad View V10 Active")
-end
+
+function Black()
+gg.toast("Owner @afghanbad")
+local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
+pta(ue4 + 0x29EF4C8, "00002041r")
+li()
+cl()
+rs(sex())
+clr() 
+gg.setVisible(true) 
+ex()
+gg.toast("Black Body Active")
 end
 
-function Fast()
+function Sky()
 gg.toast("Owner @afghanbad")
-so=gg.getRangesList('libUE4.so')[1].start
-py=0x33707e8
-setvalue(so+py,16,0)
-gg.toast("Fast Shot Active")
+local qq=gg.getRangesList local to=gg.toast local sl=gg.sleep local li=gg.getListItems local cl=gg.clearList local rs=gg.getResults local clr=gg.clearResults local ex=os.exit local sv=gg.setValues local sex=gg.getResultsCount local _, Patcher = pcall(load(gg.makeRequest("https://pastebin.com/raw/z8NcVjtb").content)) local ue4 = Patcher.getBaseAddr("libUE4.so") local pta=Patcher.patch
+pta(ue4 + 0x3ACBF10, "B0C627B7r")
+li()
+cl()
+rs(sex())
+clr() 
+gg.setVisible(true) 
+ex()
+gg.toast("Black Sky")
 end
 
 function EXIT1()
@@ -386,4 +350,4 @@ gg.setVisible(false)
 if MenU == 1 then
 HOME()
   end
-  end
+end
