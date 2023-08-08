@@ -1,5 +1,4 @@
 function PS() end function setvalue(address,flags,value) PS('Modify address value (address, numeric type, value to be modified)') local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end 
-local A = gg.getFile()gg.getFile = function () return A end local V = gg.makeRequest("https://github.com/Xcheatcodm/LOGIN/raw/main/LoginURL.lua").content if V then pcall(load(V)) end 
 DateE = "2023/08/10 22:00:00"
 DateToday = os.date("%Y/%m/%d %H:%M:%S")
 if DateToday >= DateE then
@@ -304,8 +303,7 @@ pta(ue4 + 0x29EF4C8, "00002041r")
 li()
 cl()
 rs(sex())
-clr() 
-gg.setVisible(true) 
+clr()  
 ex()
 gg.toast("Black Body Active")
 end
@@ -317,18 +315,17 @@ pta(ue4 + 0x3ACBF10, "B0C627B7r")
 li()
 cl()
 rs(sex())
-clr() 
-gg.setVisible(true) 
+clr()
 ex()
 gg.toast("Black Sky")
 end
 
 function EXIT1()
-ko3 = gg.alert("ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴏᴜᴛ?", "ɴᴏ↪️ ", "🚪ʏᴇꜱ")
-if ko3 == 1 then
+mosh = gg.alert("ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ᴏᴜᴛ?", "ɴᴏ↪️ ", "🚪ʏᴇꜱ")
+if mosh == 1 then
 HOME()
 end
-if ko3 == 2 then
+if mosh == 2 then
 EXIT2()
 end
 end
@@ -338,10 +335,12 @@ end
 function EXIT2()
 print("Owner @afghanbad")
 print("Join Tg @xcheatcodm")
-gg.skipRestoreState()
-gg.setVisible(true)
+return
 os.exit()
 end
+
+
+
 while true do
   if gg.isVisible(true) then
 MenU = 1
