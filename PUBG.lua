@@ -18,7 +18,7 @@ MenUU = gg.choice({
  "Menu Bypass",
  "Menu Cheat",
  "Exit", 
-}, nil, (os["date"]("Owner @afghanbad")))
+}, nil, (os["date"]("Vip Script By @afghanbad")))
 if MenUU == nil then
 end
      
@@ -42,7 +42,7 @@ gg.toast("@afghanbad")
  "Bypass Logo",
  "Bypass Lobby",
  "Back", 
-}, nil, (os["date"]("Owner @afghanbad")))
+}, nil, (os["date"]("Vip Script By @afghanbad")))
         if menu1 == nil then
         end
      
